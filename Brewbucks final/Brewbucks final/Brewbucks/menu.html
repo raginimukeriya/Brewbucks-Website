@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewBucks - Menu</title>
+    <link rel="icon" href="images/logo-small.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">
+                <img src="images/logo-small.png" alt="">
+                <span>BrewBucks</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart<span class="cart-badge" id="cartBadge" hidden>0</span></a></li>
+                <li><a href="login.html" id="authLink">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="menu-header">
+        <h1>Our Menu</h1>
+        <p>Choose your favourite coffee</p>
+    </section>
+
+    <section class="menu-container">
+        <div class="menu-card">
+            <div class="product-image"><img src="images/cappuccino.jpg" alt="Cappuccino" loading="lazy"></div>
+            <h3>Cappuccino</h3>
+            <p>Espresso with steamed milk and milk foam.</p>
+            <h4>&#8377;120</h4>
+            <button type="button" onclick="addToCart('Cappuccino', 120)">Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+            <div class="product-image"><img src="images/latte.jpg" alt="Latte" loading="lazy"></div>
+            <h3>Latte</h3>
+            <p>Smooth espresso with creamy steamed milk.</p>
+            <h4>&#8377;130</h4>
+            <button type="button" onclick="addToCart('Latte', 130)">Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+            <div class="product-image"><img src="images/espresso.jpg" alt="Espresso" loading="lazy"></div>
+            <h3>Espresso</h3>
+            <p>Strong and rich freshly brewed coffee.</p>
+            <h4>&#8377;100</h4>
+            <button type="button" onclick="addToCart('Espresso', 100)">Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+            <div class="product-image"><img src="images/americano.jpg" alt="Americano" loading="lazy"></div>
+            <h3>Americano</h3>
+            <p>Espresso combined with hot water.</p>
+            <h4>&#8377;110</h4>
+            <button type="button" onclick="addToCart('Americano', 110)">Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+            <div class="product-image"><img src="images/mocha.jpg" alt="Mocha" loading="lazy"></div>
+            <h3>Mocha</h3>
+            <p>Delicious combination of coffee and chocolate.</p>
+            <h4>&#8377;150</h4>
+            <button type="button" onclick="addToCart('Mocha', 150)">Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+            <div class="product-image"><img src="images/cold-coffee.jpg" alt="Cold Coffee" loading="lazy"></div>
+            <h3>Cold Coffee</h3>
+            <p>Chilled and refreshing creamy coffee.</p>
+            <h4>&#8377;140</h4>
+            <button type="button" onclick="addToCart('Cold Coffee', 140)">Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+            <div class="product-image"><img src="images/hazelnut.jpg" alt="Hazelnut Coffee" loading="lazy"></div>
+            <h3>Hazelnut</h3>
+            <p>Rich coffee with a smooth hazelnut flavor.</p>
+            <h4>&#8377;180</h4>
+            <button type="button" onclick="addToCart('Hazelnut Coffee', 180)">Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+            <div class="product-image"><img src="images/vanilla.jpg" alt="Vanilla Coffee" loading="lazy"></div>
+            <h3>Vanilla</h3>
+            <p>Smooth coffee with a sweet vanilla twist.</p>
+            <h4>&#8377;239</h4>
+            <button type="button" onclick="addToCart('Vanilla Coffee', 239)">Add to Cart</button>
+        </div>
+
+    
+
+    </section>
+
+    <h2 class="special-title">Our Signature Brews</h2>
+
+    <section class="menu-container signature-brews">
+        <div class="menu-card">
+            <div class="product-image"><img src="images/mid-night-brew.jpg" alt="Mid-night Brew" loading="lazy"></div>
+            <h3>Mid-night Brew</h3>
+            <p>A bold and rich coffee for those late-night moments.</p>
+            <h4>&#8377;199</h4>
+            <button type="button" onclick="addToCart('Mid-night Brew', 199)">Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+            <div class="product-image"><img src="images/brown-sugar-brew.jpg" alt="Brown Sugar Brew" loading="lazy"></div>
+            <h3>Brown Sugar Brew</h3>
+            <p>Smooth coffee blended with rich and sweet brown sugar.</p>
+            <h4>&#8377;229</h4>
+            <button type="button" onclick="addToCart('Brown Sugar Brew', 229)">Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+            <div class="product-image"><img src="images/iced-latte.jpg" alt="Iced Latte" loading="lazy"></div>
+            <h3>Iced Latte</h3>
+            <p>Chilled espresso with creamy milk for a refreshing taste.</p>
+            <h4>&#8377;249</h4>
+            <button type="button" onclick="addToCart('Iced Latte', 249)">Add to Cart</button>
+        </div>
+<div class="menu-card">
+            <div class="product-image"><img src="images/butterscotch.jpg" alt="Butterscotch Coffee" loading="lazy"></div>
+            <h3>The Golden Brew</h3>
+            <p>Creamy coffee with a sweet butterscotch finish.</p>
+            <h4>&#8377;259</h4>
+            <button type="button" onclick="addToCart('The Golden Brew', 259)">Add to Cart</button>
+        </div>
+
+</section>
+    
+<!-- A Slice of Heaven -->
+
+<h2 class="special-title">A Slice of Heaven</h2>
+
+<section class="menu-container">
+
+    
+
+    <div class="menu-card">
+        <div class="product-image">
+            <img src="images/cookie.png" alt="Cookies">
+        </div>
+        <h3>Choco Chip Cookies</h3>
+        <p>Crunchy cookies loaded with chocolate chips.</p>
+        <h4>&#8377;99</h4>
+        <button onclick="addToCart('Choco Chip Cookies', 99)">Add to Cart</button>
+    </div>
+
+    <div class="menu-card">
+        <div class="product-image">
+            <img src="images/croissant.jpg" alt="Croissant">
+        </div>
+        <h3>Classic Croissant</h3>
+        <p>Freshly baked, golden and buttery French pastry.</p>
+        <h4>&#8377;179</h4>
+        <button onclick="addToCart('Classic Croissant', 179)">Add to Cart</button>
+    </div>
+
+    
+
+<div class="menu-card">
+        <div class="product-image">
+            <img src="images/tiramisu.jpg" alt="Tiramisu">
+        </div>
+        <h3>Classic Tiramisu</h3>
+        <p>Creamy layers with a rich coffee flavour.</p>
+        <h4>&#8377;229</h4>
+        <button onclick="addToCart('Classic Tiramisu', 229)">Add to Cart</button>
+    </div>
+    <div class="menu-card">
+        <div class="product-image">
+            <img src="images/cheesecake.jpg" alt="Cheesecake">
+        </div>
+        <h3>Classic Cheesecake</h3>
+        <p>Rich, smooth and creamy cheesecake.</p>
+        <h4>&#8377;269</h4>
+        <button onclick="addToCart('Classic Cheesecake', 269)">Add to Cart</button>
+    </div>
+
+   
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
