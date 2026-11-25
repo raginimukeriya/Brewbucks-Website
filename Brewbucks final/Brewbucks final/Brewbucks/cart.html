@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewBucks - Cart</title>
+    <link rel="icon" href="images/logo-small.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">
+                <img src="images/logo-small.png" alt="">
+                <span>BrewBucks</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart<span class="cart-badge" id="cartBadge" hidden>0</span></a></li>
+                <li><a href="login.html" id="authLink">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cart-section">
+        <h1>Your Cart</h1>
+
+        <div id="cart-items"></div>
+
+        <div id="empty-cart">
+            <p>Your cart is empty.</p>
+            <a class="btn" href="menu.html">Browse the menu</a>
+        </div>
+
+        <div class="cart-summary" id="cart-summary">
+            <h2>Total: &#8377;<span id="cart-total">0</span></h2>
+            <button type="button" id="place-order" onclick="goToPayment()">Place Order</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BrewBucks. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+</html>

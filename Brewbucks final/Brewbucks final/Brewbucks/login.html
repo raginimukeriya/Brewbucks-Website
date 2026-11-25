@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewBucks - Login</title>
+    <link rel="icon" href="images/logo-small.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">
+                <img src="images/logo-small.png" alt="">
+                <span>BrewBucks</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart<span class="cart-badge" id="cartBadge" hidden>0</span></a></li>
+                <li><a href="login.html" id="authLink">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="login-section">
+        <div class="login-box">
+            <h1>Welcome to BrewBucks</h1>
+            <p>Login to continue</p>
+
+            <form id="loginForm">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" autocomplete="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password" required>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <p id="loginMessage" role="alert"></p>
+
+            <p class="signup-text">
+                Don't have an account?
+                <a href="signup.html">Sign Up</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BrewBucks. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+</html>

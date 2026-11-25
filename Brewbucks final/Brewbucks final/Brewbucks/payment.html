@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewBucks - Payment</title>
+    <link rel="icon" href="images/logo-small.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">
+                <img src="images/logo-small.png" alt="">
+                <span>BrewBucks</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart<span class="cart-badge" id="cartBadge" hidden>0</span></a></li>
+                <li><a href="login.html" id="authLink">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="payment-section">
+        <div class="payment-box">
+            <h1>Payment</h1>
+            <p>Complete your order</p>
+
+            <div class="order-details">
+                <h2>Your Order</h2>
+                <div id="paymentItems"></div>
+            </div>
+
+            <div class="payment-total">
+                <h2>Total Amount</h2>
+                <h2>&#8377;<span id="paymentTotal">0</span></h2>
+            </div>
+
+            <form id="paymentForm" novalidate>
+
+                <label for="paymentMethod">Select Payment Method</label>
+                <select id="paymentMethod" required>
+                    <option value="">Select Method</option>
+                    <option value="razorpay">Pay Online (Razorpay)</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select>
+
+                <button type="submit" id="payBtn">Place Order</button>
+            </form>
+
+            <p id="paymentMessage" role="alert"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BrewBucks. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/payment.js"></script>
+
+</body>
+</html>

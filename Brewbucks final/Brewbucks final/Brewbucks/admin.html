@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewBucks - Admin</title>
+    <link rel="icon" href="images/logo-small.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">
+                <img src="images/logo-small.png" alt="">
+                <span>BrewBucks</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart<span class="cart-badge" id="cartBadge" hidden>0</span></a></li>
+                <li><a href="login.html" id="authLink">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="admin-section">
+        <h1>Admin Panel &ndash; All Orders</h1>
+
+        <div class="admin-stats" id="stats"></div>
+
+        <div class="admin-toolbar">
+            <input type="search" id="search" placeholder="Search order ID, name, email...">
+            <select id="filterStatus"><option value="">All statuses</option></select>
+            <select id="filterMethod">
+                <option value="">All payments</option>
+                <option value="razorpay">Razorpay</option>
+                <option value="cod">Cash on Delivery</option>
+            </select>
+        </div>
+
+        <div class="admin-table-wrap">
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Order</th><th>Date</th><th>Customer</th><th>Items</th>
+                        <th>Total</th><th>Payment</th><th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="ordersBody"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BrewBucks. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/admin.js"></script>
+
+</body>
+</html>
