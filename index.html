@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewBucks - Coffee Caf&eacute;</title>
+    <link rel="icon" href="images/logo-small.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">
+                <img src="images/logo-small.png" alt="">
+                <span>BrewBucks</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart<span class="cart-badge" id="cartBadge" hidden>0</span></a></li>
+                <li><a href="login.html" id="authLink">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="images/hero-banner.jpg" alt="BrewBucks - Good Coffee. Good Moments. Freshly brewed coffee made to make your day better.">
+        <a href="menu.html" class="hero-menu-btn" aria-label="Explore our menu"></a>
+    </section>
+
+    <section class="about">
+        <h2>Welcome to BrewBucks</h2>
+        <p>
+            BrewBucks is a simple digital caf&eacute; platform where you can
+            explore our coffee menu, select your favourite items and
+            prepare your order easily.
+        </p>
+    </section>
+
+    <section class="popular">
+        <h2>Popular Coffee</h2>
+        <div class="cards">
+            <a class="card-link" href="menu.html" aria-label="View menu">
+            <div class="card">
+                <div class="coffee-icon"><img src="images/cappuccino.jpg" alt="Cappuccino"></div>
+                <h3>Cappuccino</h3>
+                <p>Rich espresso with steamed milk.</p>
+                <span>&#8377;120</span>
+            </div>
+            </a>
+            <a class="card-link" href="menu.html" aria-label="View menu">
+            <div class="card">
+                <div class="coffee-icon"><img src="images/latte.jpg" alt="Latte"></div>
+                <h3>Latte</h3>
+                <p>Smooth coffee with creamy milk.</p>
+                <span>&#8377;130</span>
+            </div>
+            </a>
+            <a class="card-link" href="menu.html" aria-label="View menu">
+            <div class="card">
+                <div class="coffee-icon"><img src="images/mocha.jpg" alt="Mocha"></div>
+                <h3>Mocha</h3>
+                <p>Chocolate blended with delicious coffee.</p>
+                <span>&#8377;150</span>
+            </div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BrewBucks. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
